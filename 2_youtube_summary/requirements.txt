@@ -1,0 +1,8 @@
+pandas
+pydantic
+youtube-comment-downloader
+langchain
+langchain-core
+langchain-openai
+PyYAML
+langdetect

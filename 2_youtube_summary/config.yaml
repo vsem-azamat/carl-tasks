@@ -1,0 +1,28 @@
+video_urls:
+  - "https://www.youtube.com/watch?v=2a-I-JLB-gM"
+  - "https://www.youtube.com/watch?v=TxYsoKzfM6c"
+  - "https://www.youtube.com/watch?v=UOSmQBgmFXU"
+  - "https://www.youtube.com/watch?v=fsPD7EELdH4"
+  - "https://www.youtube.com/watch?v=yv3hEKltKOg"
+
+analysis_model: "gpt-4.1-mini"
+filter_language: null    # null = analyze all languages, or specify language code like "cs"
+output_language: "en"
+min_length: 10
+
+# Batch processing settings
+batch_size: 20           # Number of comments to analyze in one LLM call
+max_comments: 1000       # Maximum comments to process per video
+enable_fallback: true    # Use single comment analysis if batch fails
+
+# Parallel processing settings
+max_video_workers: 20     # Number of videos to process in parallel
+max_batch_workers: 20     # Number of batches to process in parallel per video
+
+# Caching settings
+use_cache: true          # Use cached analysis results if available
+cache_version: "1.0"     # Increment to invalidate old cache
+
+# Audience analysis settings
+analyze_audience: true   # Enable audience demographics analysis
+language_analysis: true   # Analyze language distribution

@@ -31,7 +31,7 @@ pip install -r requirements.txt
   3. Run the complete pipeline: `make run`
   4. Or run individual steps: `make download`, `make analyze`, `make report`
   5. Check status: `make status` and logs: `make logs`
-  6. Reports are generated in the project root as `.txt` files
+  6. Reports are generated in the project `reports/` directory.
 
 ---
 
